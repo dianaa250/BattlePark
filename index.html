@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>БАТТЛПАРК</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="БаттлПарк — военно-спортивный клуб в Москве. Пейнтбол, лазертаг, страйкбол, квесты, полоса препятствий, метание ножей, тактическая медицина. Корпоративы, дни рождения, командные игры. Профессиональные инструкторы.">
+<meta name="keywords" content="пейнтбол Москва, лазертаг, страйкбол, квесты, активный отдых, корпоратив, день рождения, тимбилдинг, БаттлПарк">
+</head>
+<body>
+    <!-- Весь HTML код остаётся без изменений -->
+    <header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="images/photo_2026-05-28_11-14-37.jpg" alt="Логотип БаттлПарк" style="width: 50px; height: 60px;" class="logo-icon">
+            <div class="logo-text">
+                <h1><span>БАТТЛПАРК</span></h1>
+                <p>корпорация активного отдыха</p>
+                <p><a href="https://vk.com/cpvgvardiy">АНО ЦПВ "ГВАРДИЯ"</a></p>
+            </div>
+        </div>
+        <div class="nav-pages">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="#booking" class="btn-red">Запись</a>
+            <a href="cart.html" style="position:relative;text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" style="display:none;background:red;color:white;border-radius:50%;padding:2px 6px;font-size:12px;position:absolute;top:-10px;right:-15px;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+    <a href="tariffs-beta.html" class="floating-button">
+        Оформить заказ!
+    </a>
+
+    <!-- Hero -->
+    <section class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="images/IMG_7338.MOV" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-new">
+            <div class="hero-title-new"><span>БАТТЛ</span>ПАРК</div>
+        </div>
+    </section>
+
+    <!-- Блок О клубе -->
+    <section class="about-club">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h3>О нас</h3>
+                <p style="margin-bottom: 16px;">Приглашает на проведение активного отдыха, игры в пейнтбол, лазертаг, страйкбол и предлагает организацию квестов, военно-спортивных игр и турниров.</p>
+                <p style="margin-bottom: 16px;">Территории оборудованы всем необходимым для проведения командообразующий мероприятий – семейных праздников, дней рождения, встречи одноклассников, школьных и студенческих турниров, корпоративных соревнований, спартакиад и чемпионатов. На площадках размещены этапы с элементами прикладных видов спорта – полоса препятствий, стенды для метания ножей, стрельбы из пневматики, стрельбы из лука и арбалета, метания копья. Для переодевания участников и хранения личных вещей работают раздевалки. Игроки могут расположится в комфортных зонах отдыха, организовать барбекю или заказать пиццу.</p>
+                <p style="margin-bottom: 16px;">Возраст участников активных игр и дней здоровья 8 лет +</p>
+            </div>
+            <div class="stacked-photos">
+                <div class="photo-stack-item photo-1">
+                    <img src="images/photo_2026-06-04_19-59-46.jpg" alt="Пейнтбол действие">
+                </div>
+                <div class="photo-stack-item photo-2">
+                    <img src="images/IMG_8206.jpg" alt="Команда">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бегущая строка -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span><i class="fas fa-paintball"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-bolt"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-shield-alt"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-paintball"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-paintball"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-bolt"></i> БАТТЛПАРК БАТТЛПАРК</span>
+        </div>
+    </div>
+
+    <!-- Чем мы лучше -->
+<section class="why-better">
+    <div class="container">
+        <div class="advantages-scroll">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-question"></i>
+                </div>
+                <h4>Широкий ассортимент услуг</h4>
+                <p>Широкий ассортимент услуг, большой опыт работы, профессиональные инструкторы</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+                <h4>Цены и скидки</h4>
+                <p>цены на любой бюджет, большой выбор игровых программ, индивидуальных подход к каждому клиенту</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-map-location-dot"></i>
+                </div>
+                <h4>Качество и удобство</h4>
+                <p>удобное расположение, качественный инвентарь</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Блок: Расписание мероприятий -->
+<section class="schedule-section" style="padding: 60px 0; background: white;">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <div class="cta-icon" style="margin: 0 auto 25px;">
+                <i class="fas fa-paintball"></i>
+            </div>
+            <h3 style="font-size: 2rem; margin-bottom: 20px;">Расписание мероприятий</h3>
+            <p style="margin-bottom: 30px;">Пейнтбольный клуб BattlePark проводит пейнтбольные сценарные игры, военные реконструкции, соревнования по тактическому пейнтболу, игры в лазертаг</p>
+            <a href="tariffs-beta.html" class="cta-button" style="display: inline-flex;">
+                <i class="fas fa-pen-alt"></i> Заполнить анкету
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Блок тарифы -->
+    <section class="tariffs-block">
+    <div class="tariffs-container">
+        <div class="tariffs-header">
+            <h2>ТАРИФЫ НА <span>УСЛУГИ</span></h2>
+            <p>В стоимость входит: аренда маркера, маска, экипировка и сопровождение инструктора.</p>
+        </div>
+
+        <div class="row-top">
+            <!-- Лазертаг -->
+            <div class="tariff-card">
+                <div class="popular-badge">ПОПУЛЯРНЫЙ ПАКЕТ</div>
+                <h3 class="tariff-title">ЛАЗЕРТАГ</h3>
+                <div class="tariff-price">
+                    <span class="price">От 1 150</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">от 8 человек</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-crosshairs"></i> Базовый маркер</li>
+                    <li><i class="fas fa-paintball"></i> Лазерное оружие</li>
+                    <li><i class="fas fa-shower"></i> Экипировка</li>
+                    <li><i class="fas fa-chalkboard-user"></i> Тактический инструктор</li>
+                </ul>
+                <a href="lasertag.html" class="tariff-button">ПОДРОБНЕЕ <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Пейнтбол -->
+            <div class="tariff-card popular">
+                <div class="popular-badge">САМЫЙ ПОПУЛЯРНЫЙ ПАКЕТ</div>
+                <h3 class="tariff-title">ПЕЙНТБОЛ</h3>
+                <div class="tariff-price">
+                    <span class="price">2 500</span> <span class="currency">₽</span>
+                    <div class="price-caption">от 8 человек</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-gun"></i> Маркер и заправка воздуха</li>
+                    <li><i class="fas fa-paintball"></i> 500 шаров</li>
+                    <li><i class="fas fa-user-ninja"></i> Судейство</li>
+                    <li><i class="fas fa-vest"></i> Форма и бронежилет</li>
+                </ul>
+                <a href="paintball.html" class="tariff-button">ПОДРОБНЕЕ <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Страйкбол -->
+            <div class="tariff-card">
+                <div class="popular-badge">ПОПУЛЯРНЫЙ ПАКЕТ</div>
+                <h3 class="tariff-title">СТРАЙКБОЛ</h3>
+                <div class="tariff-price">
+                    <span class="price">От 2 000</span> <span class="currency">₽</span>
+                    <div class="price-caption">от 8 человек</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-crosshairs"></i> Базовый маркер</li>
+                    <li><i class="fas fa-paintball"></i> 500 шаров</li>
+                    <li><i class="fas fa-shower"></i> Экипировка</li>
+                    <li><i class="fas fa-chalkboard-user"></i> Тактический инструктор</li>
+                </ul>
+                <a href="lasertag.html" class="tariff-button">ПОДРОБНЕЕ <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="row-bottom">
+            <!-- Прикладные виды спорта -->
+            <div class="tariff-card">
+                <h3 class="tariff-title">ПРИКЛАДНЫЕ ВИДЫ СПОРТА</h3>
+                <div class="tariff-price">
+                    <span class="price">от 250</span> <span class="currency">₽</span>
+                    <div class="price-caption">от 8 человек</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-bullseye"></i> Полоса препятствий</li>
+                    <li><i class="fas fa-paintball"></i> Первая помощь</li>
+                    <li><i class="fas fa-camera"></i> Метание ножей</li>
+                    <li><i class="fas fa-utensils"></i> И многое другое</li>
+                </ul>
+                <a href="applied_sports.html" class="tariff-button">ПОДРОБНЕЕ <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Квесты -->
+            <div class="tariff-card">
+                <h3 class="tariff-title">КВЕСТЫ</h3>
+                <div class="tariff-price">
+                    <span class="price">от 2 000</span> <span class="currency">₽</span>
+                    <div class="price-caption">от 8 человек</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-bullseye"></i> Сценарий</li>
+                    <li><i class="fas fa-paintball"></i> Инвентарь</li>
+                    <li><i class="fas fa-camera"></i> Оборудование</li>
+                    <li><i class="fas fa-utensils"></i> Ведущий</li>
+                </ul>
+                <a href="kvest.html" class="tariff-button">ПОДРОБНЕЕ <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Питание -->
+            <div class="tariff-card">
+                <h3 class="tariff-title">ПИТАНИЕ</h3>
+                <div class="tariff-price">
+                    <span class="price">от 370</span> <span class="currency">₽</span>
+                    <div class="price-caption">от 30 человек</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-bullseye"></i> Полевая кухня</li>
+                    <li><i class="fas fa-paintball"></i> Горячие напитки</li>
+                    <li><i class="fas fa-camera"></i> Шашлык ассорти</li>
+                    <li><i class="fas fa-utensils"></i> Кейтеринг</li>
+                </ul>
+                <a href="services.html#nutrition" class="tariff-button">ПОДРОБНЕЕ <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Размещение гостей -->
+            <div class="tariff-card">
+                <h3 class="tariff-title">РАЗМЕЩЕНИЕ ГОСТЕЙ</h3>
+                <div class="tariff-price">
+                    <span class="price">от 200</span> <span class="currency">₽</span>
+                    <div class="price-caption">до 30 человек</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-bullseye"></i> Гостевая зона</li>
+                    <li><i class="fas fa-paintball"></i> Шатёр 3,5*3,5 м.</li>
+                    <li><i class="fas fa-camera"></i> Веранда 5*6 м.</li>
+                    <li><i class="fas fa-utensils"></i> Армейская палатка 5,5*5,5 м.</li>
+                </ul>
+                <a href="contacts.html#booking" class="tariff-button">ЗАБРОНИРОВАТЬ <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Блок: Пейнтбольный клуб BattlePark организует и проводит (аккордеон + фото) -->
+<section class="accordion-with-photo" style="padding: 60px 0; background: white;">
+    <div class="container">
+        <h2 class="section-title" style="text-align: center;">Пейнтбольный клуб BattlePark <span>организует и проводит</span></h2>
+        
+        <!-- ГРИД: на ПК 2 колонки, на планшетах и телефонах 1 колонка -->
+        <div class="accordion-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 50px; align-items: start;">
+            
+            <!-- ЛЕВАЯ КОЛОНКА: МЕСТО ДЛЯ ФОТО -->
+            <div class="accordion-photo-area" style="position: sticky; top: 100px;">
+                <div id="accordionPhoto" style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 35px rgba(0,0,0,0.1); background: #f5f5f5; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                    <img id="accordionImage" src="images/photo_2026-05-28_12-28-24.jpg" alt="Пейнтбол" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+            </div>
+            
+            <!-- ПРАВАЯ КОЛОНКА: АККОРДЕОН -->
+            <div class="accordion-container">
+                
+                <!-- Пункт 1 -->
+                <div class="accordion-item" data-photo="images/photo_2026-05-28_12-28-24.jpg">
+                    <div class="accordion-header" style="background: #f5f5f5; border-radius: 16px; margin-bottom: 15px; cursor: pointer;">
+                        <div style="font-weight: 700; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <span><i class="fas fa-tree" style="color: #D32F2F; margin-right: 12px;"></i> Тактический пейнтбол</span>
+                            <span class="accordion-icon" style="color: #D32F2F; font-size: 22px; transition: transform 0.3s;">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content" style="display: none; padding: 0 20px 20px 20px; background: #fafafa; border-radius: 0 0 16px 16px; margin-top: -15px; margin-bottom: 15px;">
+                        <p>Тактический пейнтбол, в отличие от спортивного, проводится на различных площадках: лесных (поэтому тактический пейнтбол иногда называют «лесным»), полевых, частично застроенных, внутри зданий и сооружений. Существуют два направления тактического пейнтбола, отличающиеся одно от другого «целями и задачами»: тренировочное и досуговое.</p>
+                    </div>
+                </div>
+
+                <!-- Пункт 2 -->
+                <div class="accordion-item" data-photo="images/IMG_8206.jpg">
+                    <div class="accordion-header" style="background: #f5f5f5; border-radius: 16px; margin-bottom: 15px; cursor: pointer;">
+                        <div style="font-weight: 700; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <span><i class="fas fa-flag-checkered" style="color: #D32F2F; margin-right: 12px;"></i> Спортивный пейнтбол</span>
+                            <span class="accordion-icon" style="color: #D32F2F; font-size: 22px; transition: transform 0.3s;">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content" style="display: none; padding: 0 20px 20px 20px; background: #fafafa; border-radius: 0 0 16px 16px; margin-top: -15px; margin-bottom: 15px;">
+                        <p>Отличительная особенность спортивного пейнтбола — это огороженная защитной сеткой площадка с ровным искусственным или естественным покрытием (трава, земля, или песок), где роль укрытий выполняют симметрично расположенные надувные фигуры. А также более высокая степень безопасности игроков, в отличие от тактического — причина кроется в строгих правилах проведения турниров (качество площадки, наличие судей, контроль оборудования игроков и многое другое).</p>
+                    </div>
+                </div>
+
+                <!-- Пункт 3 -->
+                <div class="accordion-item" data-photo="images/photo_2026-06-04_19-59-46.jpg">
+                    <div class="accordion-header" style="background: #f5f5f5; border-radius: 16px; margin-bottom: 15px; cursor: pointer;">
+                        <div style="font-weight: 700; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <span><i class="fas fa-tank" style="color: #D32F2F; margin-right: 12px;"></i> Большие пейнтбольные маневры (БПМ)</span>
+                            <span class="accordion-icon" style="color: #D32F2F; font-size: 22px; transition: transform 0.3s;">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content" style="display: none; padding: 0 20px 20px 20px; background: #fafafa; border-radius: 0 0 16px 16px; margin-top: -15px; margin-bottom: 15px;">
+                        <p>БПМ — это БОЛЬШИЕ (численностью свыше 2500 человек) ПЕЙНТБОЛЬНЫЕ (проходящие с применением пейнтбольных маркеров, танков, минометов, пулеметов) МАНЕВРЫ. Это 8-часовая игра на площади около квадратного километра, идущая по заранее опубликованному сценарию, с десятками миссий и заданий. Каждые маневры имеют свою тему, под которую пишется сценарий и делается антураж, формируются штабы сторон и подразделения, которым предстоит добывать в «бою» очки, определяющие к концу дня победителя. Маневры ежегодно проходят в ближайшем Подмосковье в середине-конце мая.</p>
+                    </div>
+                </div>
+
+                <!-- Пункт 4 -->
+                <div class="accordion-item" data-photo="images/5472236030066291845.jpg">
+                    <div class="accordion-header" style="background: #f5f5f5; border-radius: 16px; margin-bottom: 15px; cursor: pointer;">
+                        <div style="font-weight: 700; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <span><i class="fas fa-bolt" style="color: #D32F2F; margin-right: 12px;"></i> Лазертаг</span>
+                            <span class="accordion-icon" style="color: #D32F2F; font-size: 22px; transition: transform 0.3s;">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content" style="display: none; padding: 0 20px 20px 20px; background: #fafafa; border-radius: 0 0 16px 16px; margin-top: -15px; margin-bottom: 15px;">
+                        <p>Лазертаг – это спортивно-развлекательная игра для детей и взрослых, целью которой является поразить соперника лазерным лучом и заработать очки. Игрокам выдается специальное электронное оружие – тагер. Оно может быть в виде бластера, автомата, пушки или винтовки. Лазерное оружие стреляет инфракрасными лучами. Они используются и в быту, например, при переключении пультом каналов на телевизоре, поэтому являются совершенно безопасными для человека.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* АДАПТИВНОСТЬ ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
+@media (max-width: 992px) {
+    .accordion-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .accordion-photo-area {
+        position: relative !important;
+        top: 0 !important;
+        margin-bottom: 20px;
+    }
+    
+    .accordion-photo-area #accordionPhoto {
+        min-height: 300px !important;
+    }
+    
+    .accordion-header div {
+        padding: 15px !important;
+        font-size: 0.95rem;
+    }
+    
+    .accordion-icon {
+        font-size: 20px !important;
+    }
+    
+    .accordion-content {
+        padding: 0 15px 15px 15px !important;
+    }
+    
+    .accordion-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .accordion-with-photo {
+        padding: 40px 0 !important;
+    }
+    
+    .accordion-photo-area #accordionPhoto {
+        min-height: 250px !important;
+    }
+    
+    .accordion-header div {
+        padding: 12px !important;
+        font-size: 0.85rem !important;
+    }
+    
+    .accordion-header i {
+        font-size: 14px !important;
+        margin-right: 8px !important;
+    }
+    
+    .accordion-icon {
+        font-size: 18px !important;
+    }
+    
+    .accordion-content p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .accordion-photo-area p {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* Планшеты (горизонтальная ориентация) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .accordion-header div {
+        padding: 18px !important;
+        font-size: 1rem !important;
+    }
+    
+    .accordion-photo-area #accordionPhoto {
+        min-height: 350px !important;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Находим все блоки аккордеона
+    const items = document.querySelectorAll('.accordion-item');
+    const photoImg = document.getElementById('accordionImage');
+    const defaultPhoto = 'images/paintball-default.jpg';
+    
+    // Функция: закрыть все блоки
+    function closeAllItems() {
+        items.forEach(item => {
+            const content = item.querySelector('.accordion-content');
+            const icon = item.querySelector('.accordion-icon');
+            const header = item.querySelector('.accordion-header');
+            
+            if (content) {
+                content.style.display = 'none';
+            }
+            if (icon) {
+                icon.style.transform = 'rotate(0deg)';
+            }
+            if (header) {
+                header.style.borderRadius = '16px';
+                header.style.marginBottom = '15px';
+            }
+        });
+    }
+    
+    // Функция: открыть конкретный блок
+    function openItem(item) {
+        const content = item.querySelector('.accordion-content');
+        const icon = item.querySelector('.accordion-icon');
+        const header = item.querySelector('.accordion-header');
+        
+        if (content) {
+            content.style.display = 'block';
+            content.style.opacity = '0';
+            setTimeout(() => { content.style.opacity = '1'; }, 10);
+        }
+        if (icon) {
+            icon.style.transform = 'rotate(45deg)';
+        }
+        if (header) {
+            header.style.borderRadius = '16px 16px 0 0';
+            header.style.marginBottom = '0';
+        }
+        
+        // Меняем фото
+        const photoPath = item.getAttribute('data-photo');
+        if (photoImg && photoPath) {
+            photoImg.src = photoPath;
+            photoImg.onerror = function() {
+                this.src = defaultPhoto;
+            };
+        }
+    }
+    
+    // Навешиваем обработчики на каждый заголовок
+    items.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        if (!header) return;
+        
+        header.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const currentContent = item.querySelector('.accordion-content');
+            const isOpen = currentContent && currentContent.style.display === 'block';
+            
+            if (isOpen) {
+                const content = item.querySelector('.accordion-content');
+                const icon = item.querySelector('.accordion-icon');
+                const headerEl = item.querySelector('.accordion-header');
+                if (content) content.style.display = 'none';
+                if (icon) icon.style.transform = 'rotate(0deg)';
+                if (headerEl) {
+                    headerEl.style.borderRadius = '16px';
+                    headerEl.style.marginBottom = '15px';
+                }
+            } else {
+                closeAllItems();
+                openItem(item);
+            }
+        });
+    });
+    
+    // По умолчанию открываем первый блок
+    if (items.length > 0) {
+        openItem(items[0]);
+    }
+})();
+</script>
+
+    <!-- Карусель сценариев -->
+    <section class="scenarios">
+        <div class="container">
+            <h3 style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 20px;">Сценарии игр</h3>
+            <p style="text-align: center; margin-bottom: 40px;">Листайте, чтобы выбрать легенду вашей битвы</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="scenario-card">
+                            <h4>Спортивные игры по пейнтболу</h4>
+                            <p>Отличительная особенность спортивного пейнтбола — это огороженная защитной сеткой площадка с ровным искусственным или естественным покрытием (трава, земля, или песок), где роль укрытий выполняют симметрично расположенные надувные фигуры. А также более высокая степень безопасности игроков, в отличие от тактического — причина кроется в строгих правилах проведения турниров (качество площадки, наличие судей, контроль оборудования игроков и многое другое).</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="scenario-card">
+                            <h4>Тактические игры по пейнтболу</h4>
+                            <p>Тактический пейнтбол, в отличие от спортивного, проводится на различных площадках: лесных (поэтому тактический пейнтбол иногда называют «лесным»), полевых, частично застроенных, внутри зданий и сооружений. Существуют два направления тактического пейнтбола, отличающиеся одно от другого «целями и задачами»: тренировочное и досуговое.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="scenario-card">
+                            <h4>Игры и соревнования для корпоративных клиентов</h4>
+                            <p>Корпоративный пейнтбол – лучший способ снять психологическое напряжение в коллективе, разрядить обстановку, сплотить коллектив, наладить общение и просто отлично провести время на свежем воздухе.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="scenario-card">
+                            <h4>Большие пейнтбольные маневры(БПМ)</h4>
+                            <p>БПМ - это БОЛЬШИЕ – численностью свыше 2500 человек ПЕЙНТБОЛЬНЫЕ – проходящие с применением пейнтбольных маркеров, танков, минометов, пулеметов - МАНЕВРЫ.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="scenario-card">
+                            <h4>Военно-патриотические мероприятия для детей и взрослых</h4>
+                            <p>Цель: Воспитывать у детей любовь к Родине и уважение к её защитникам; формировать представления о том, что Отечества – долг и право каждого человека, любящего свою Родину без ограничений по полу.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="scenario-card">
+                            <h4>Метание ножей</h4>
+                            <p>Спортивное метание ножа — вид целевого метания, которое является самостоятельной спортивной дисциплиной, с набором установленных правил, упражнений и дистанций, а также четкими требованиями к спортивному снаряду — метательному ножу.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="scenario-card">
+                            <h4>Полоса препятствий</h4>
+                            <p>Полоса препятствий — полоса местности оборудованная различными препятствиями и инженерными сооружениями. Предназначается для тренировки военнослужащих, с целью повышения их боевой и физической подготовки.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда администраторов -->
+<section class="team-admins">
+    <div class="container">
+        <h3 style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 20px;">Наша команда</h3>
+        <p style="text-align: center; margin-bottom: 48px; font-size: 1.1rem;">Брутальные инструкторы, умные квесторы и милые аниматоры - профессиональное обеспечение Вашего мероприятия</p>
+        <div class="team-grid">
+            <div class="admin-card"><div class="admin-avatar"><i class="fas fa-user-tie"></i></div><h4>Андрей С.</h4><p>Владелец</p></div>
+            <div class="admin-card"><div class="admin-avatar"><i class="fas fa-user-headset"></i></div><h4>Евгений Т.</h4><p>Заместитель</p></div>
+            <div class="admin-card"><div class="admin-avatar"><i class="fas fa-user-friends"></i></div><h4>Владислав С.</h4><p>Администратор по специальной тактической подготовки и менеджер по продажам</p></div>
+            <div class="admin-card"><div class="admin-avatar"><i class="fas fa-user-headset"></i></div><h4>Михаил Е.</h4><p>Администратор по направлению пейнтбол</p></div>
+        </div>
+    </div>
+</section>
+
+    <!-- Бегущая строка -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span><i class="fas fa-paintball"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-bolt"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-shield-alt"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-paintball"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-paintball"></i> БАТТЛПАРК БАТТЛПАРК</span>
+            <span><i class="fas fa-bolt"></i> БАТТЛПАРК БАТТЛПАРК</span>
+        </div>
+    </div>
+
+    <!-- Отзывы -->
+    <section style="padding: 40px 0 80px;">
+        <div class="container">
+<h3 style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 30px;">Отзывы клиентов</h3>            <div class="reviews-scroll">
+                <div class="review-card"><i class="fas fa-quote-left" style="color: #D32F2F;"></i><p style="margin: 12px 0;">"Потрясающая организация! Играли корпоративом, инструкторы помогли выбрать тактику, было очень круто. Зона отдыха с мангалом — отдельный плюс."</p><b>— Михаил, Авиатор</b></div>
+                <div class="review-card"><i class="fas fa-quote-left" style="color: #D32F2F;"></i><p>"Дети в восторге от лазертага! Безопасно, динамично, сценарии интересные. Спасибо администратору Екатерине за чуткость."</p><b>— Семья Ивановых</b></div>
+                <div class="review-card"><i class="fas fa-quote-left" style="color: #D32F2F;"></i><p>"Ночной пейнтбол — это вау! Необычные ощущения, фонарики, напряженная игра. Обязательно вернемся в Гвардию."</p><b>— Команда "Титан"</b></div>
+                <div class="review-card"><i class="fas fa-quote-left" style="color: #D32F2F;"></i><p>"Отпраздновали день рождения на максимуме. Игра на поражение — хит вечера. Рекомендую всем!"</p><b>— Елена, 30 лет</b></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section id="booking" class="form-section">
+        <div class="container form-grid">
+            <div class="form-box">
+                <h3 style="font-size: 1.8rem; margin-bottom: 24px;">Запись на мероприятие</h3>
+                <form id="bookingForm">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="tel" id="phone" placeholder="Телефон (+7...)" required>
+                    <textarea rows="2" placeholder="Дата, количество человек, пожелания..."></textarea>
+                    <div id="phoneError" class="error-msg">Введите корректный номер телефона (10 цифр)</div>
+                    <button type="submit" class="btn-submit"><i class="fas fa-calendar-check"></i> Отправить заявку</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Контакты</h3>
+                <p><i class="fas fa-phone-alt" style="color:#D32F2F;"></i> <strong>+7 (495) 799 2850</strong></p>
+                <p><i class="fas fa-envelope"></i> info@gvardiya-battle.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> Адрес офиса: Москва, поселение Воскресенское, Ямонтово, ул. Звездная, д. 30 стр.2</p>
+                <p><i class="fas fa-location-dot"></i> Площадка: Москва, район Троицк, ул. Армейская д.28 (15 км от МКАД)</p>
+            </div>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af5ffc430b7af9072c972394bd508bee6082765f5518d69232919e5d67344e231&amp;source=constructor" width="400" height="300" frameborder="0"></iframe>                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="paintball.html">Пейнтбол</a>
+            <a href="lasertag.html">Лазертаг</a>
+            <a href="strikeball.html">Страйкбол</a>
+            <a href="kvesty.html">Квесты</a>
+            <a href="applied_sports.html">Прикладные виды спорта</a>
+            <a href="bpm.html">БПМ</a>
+        </div>
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 30px;">
+                <p>© 2025 Корпорация активного отдыха БаттлПарк. Все права защищены.</p>
+                <p style="margin-top: 8px; font-size: 0.8rem;">Экстремальный отдых, командные игры и незабываемые эмоции</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 2 }
+            }
+        });
+
+        const form = document.getElementById('bookingForm');
+        const phoneInput = document.getElementById('phone');
+        const phoneError = document.getElementById('phoneError');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let phoneVal = phoneInput.value.trim();
+            let digits = phoneVal.replace(/\D/g, '');
+            if (digits.length < 10 || digits.length > 11) {
+                phoneError.style.display = 'block';
+                return;
+            }
+            phoneError.style.display = 'none';
+            alert('Спасибо, заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+            form.reset();
+        });
+    </script>
+    <script src="cart.js"></script>
+    <!-- КНОПКА "НАВЕРХ" -->
+<button class="scroll-top-btn" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Кнопка "Наверх"
+    (function() {
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        if (!scrollBtn) return;
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('show');
+            } else {
+                scrollBtn.classList.remove('show');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    })();
+</script>
+</body>
+</html>

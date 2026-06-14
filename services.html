@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Услуги | БАТТЛПАРК</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ШАПКА (минимальная для сохранения стиля) -->
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="images/photo_2026-05-28_11-14-37.jpg" alt="Логотип БаттлПарк" style="width: 50px; height: 60px;" class="logo-icon">
+            <div class="logo-text">
+                <h1><span>БАТТЛПАРК</span></h1>
+                <p>корпорация активного отдыха</p>
+                <p><a href="https://vk.com/cpvgvardiy">АНО ЦПВ "ГВАРДИЯ"</a></p>
+            </div>
+        </div>
+        <div class="nav-pages">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="#booking" class="btn-red">Запись</a>
+            <a href="cart.html" style="position:relative;text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" style="display:none;background:red;color:white;border-radius:50%;padding:2px 6px;font-size:12px;position:absolute;top:-10px;right:-15px;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+<a href="tariffs-beta.html" class="floating-button">
+        Оформить заказ!
+    </a>
+
+<!-- ========== БЛОК УСЛУГ (полностью самостоятельный, с фото) ========== -->
+<section class="services-main">
+    <div class="container">
+        <div class="services-header">
+            <h2>НАШИ <span>УСЛУГИ</span></h2>
+            <p>Выберите формат активного отдыха: от динамичного пейнтбола до тактических квестов</p>
+        </div>
+
+        <div class="services-grid">
+            
+            <!-- УСЛУГА 1: ПЕЙНТБОЛ -->
+            </div>
+<div class="services-grid-custom">
+    
+    <!-- УСЛУГА 1: фото СЛЕВА, текст СПРАВА -->
+    <div class="service-item">
+        <div class="service-image">
+            <img src="images/paintball.jpg" alt="Пейнтбол">
+        </div>
+        <div class="service-content">
+            <div class="service-icon"><i class="fas fa-paintball"></i></div>
+            <h3>Пейнтбол</h3>
+            <p class="service-description">Классическая командная игра с маркерами, стреляющими шарами с краской. Развивает стратегическое мышление, реакцию и командный дух. Идеально для больших компаний, корпоративов и дней рождения.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Профессиональное снаряжение</li>
+                <li><i class="fas fa-check-circle"></i> Сценарии игр</li>
+            </ul>
+            <div class="service-price">от <span>2 500 ₽</span> / человек</div>
+            <a href="tariffs-beta.html#paintball" class="service-btn">Записаться <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- УСЛУГА 2: фото СПРАВА, текст СЛЕВА (автоматически, т.к. чётная) -->
+    <div class="service-item">
+        <div class="service-image">
+            <img src="images/lasertag.jpg" alt="Лазертаг">
+        </div>
+        <div class="service-content">
+            <div class="service-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Лазертаг</h3>
+            <p class="service-description">Современный лазерный бой без синяков и боли. Полная безопасность, реалистичное оружие и датчики поражения. Идеален для детей, подростков и взрослых — играйте в любую погоду.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Лазерные бластеры</li>
+                <li><i class="fas fa-check-circle"></i> Безопасно для детей</li>
+            </ul>
+            <div class="service-price">от <span>1 150 ₽</span> / час</div>
+            <a href="tariffs-beta.html#lasertag" class="service-btn">Выбрать <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <div class="service-image">
+            <img src="images/kvest.jpg" alt="Прикладные виды спорта">
+        </div>
+        <div class="service-content">
+            <div class="service-icon"><i class="fas fa-map-location-dot"></i></div>
+            <h3>Прикладные виды спорта</h3>
+            <p class="service-description">Полоса препятствий, метание ножей, стрельба из лука и арбалета, метание копья. Военно-спортивные испытания для настоящих героев.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Командные приключения</li>
+                <li><i class="fas fa-check-circle"></i> Тактические сценарии</li>
+            </ul>
+            <div class="service-price">от <span>2 000 ₽</span> / час</div>
+            <a href="tariffs-beta.html#applied-sports" class="service-btn">Заказать <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- УСЛУГА 3: фото СЛЕВА, текст СПРАВА (нечётная) -->
+    <div class="service-item">
+        <div class="service-image">
+            <img src="images/kvest.jpg" alt="Квесты">
+        </div>
+        <div class="service-content">
+            <div class="service-icon"><i class="fas fa-map-location-dot"></i></div>
+            <h3>Квесты</h3>
+            <p class="service-description">Увлекательные командные приключения, которые развивают логическое мышление, стратегическое планирование и командный дух. Идеально для корпоративов и дней рождения.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Командные приключения</li>
+                <li><i class="fas fa-check-circle"></i> Тактические сценарии</li>
+            </ul>
+            <div class="service-price">от <span>2 000 ₽</span> / час</div>
+            <a href="tariffs-beta.html#kvest" class="service-btn">Заказать <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- УСЛУГА 4: фото СПРАВА, текст СЛЕВА (чётная) -->
+    <div class="service-item">
+        <div class="service-image">
+            <img src="images/nutrition.jpg" alt="Питание">
+        </div>
+        <div class="service-content">
+            <div class="service-icon"><i class="fas fa-utensils"></i></div>
+            <h3>Питание</h3>
+            <p class="service-description">Качественное питание для участников мероприятий. Мы обеспечиваем свежими и вкусными блюдами, соответствующими вашим требованиям и предпочтениям.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Полевая кухня</li>
+                <li><i class="fas fa-check-circle"></i> Шашлык ассорти</li>
+            </ul>
+            <div class="service-price">от <span>370 ₽</span> / человек</div>
+            <a href="tariffs-beta.html#nutrition" class="service-btn">Заказать <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    
+    <div class="service-item">
+        <div class="service-image">
+            <img src="images/nutrition.jpg" alt="Размещение гостей">
+        </div>
+        <div class="service-content">
+            <div class="service-icon"><i class="fas fa-utensils"></i></div>
+            <h3>Размещение гостей</h3>
+            <p class="service-description">Качественное питание для участников мероприятий. Мы обеспечиваем свежими и вкусными блюдами, соответствующими вашим требованиям и предпочтениям.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Полевая кухня</li>
+                <li><i class="fas fa-check-circle"></i> Шашлык ассорти</li>
+            </ul>
+            <div class="service-price">от <span>370 ₽</span> / человек</div>
+            <a href="tariffs-beta.html#guest-accommodation" class="service-btn">Заказать <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+</div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Бегущая строка для динамики -->
+<div class="marquee">
+    <div class="marquee-content">
+        <span><i class="fas fa-paintball"></i> Пейнтбол • Лазертаг • Квесты • Корпоративы • Детские праздники • Питание</span>
+        <span><i class="fas fa-bolt"></i> БаттлПарк — Услуги для активного отдыха</span>
+        <span><i class="fas fa-shield-alt"></i>Профессиональные инструкторы</span>
+        <span><i class="fas fa-paintball"></i> Пейнтбол • Лазертаг • Квесты • Корпоративы • Детские праздники • Питание</span>
+    </div>
+</div>
+
+<section id="booking" class="form-section">
+        <div class="container form-grid">
+            <div class="form-box">
+                <h3 style="font-size: 1.8rem; margin-bottom: 24px;">Запись на мероприятие</h3>
+                <form id="bookingForm">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="tel" id="phone" placeholder="Телефон (+7...)" required>
+                    <textarea rows="2" placeholder="Дата, количество человек, пожелания..."></textarea>
+                    <div id="phoneError" class="error-msg">Введите корректный номер телефона (10 цифр)</div>
+                    <button type="submit" class="btn-submit"><i class="fas fa-calendar-check"></i> Отправить заявку</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Контакты</h3>
+                <p><i class="fas fa-phone-alt" style="color:#D32F2F;"></i> <strong>+7 (495) 799 2850</strong></p>
+                <p><i class="fas fa-envelope"></i> info@gvardiya-battle.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> Адрес офиса: Москва, поселение Воскресенское, Ямонтово, ул. Звездная, д. 30 стр.2</p>
+                <p><i class="fas fa-location-dot"></i> Площадка: Москва, район Троицк, ул. Армейская д.28 (15 км от МКАД)</p>
+                <div style="margin-top: 30px; background: #f5f5f5; border-radius: 28px; padding: 20px; text-align: center;">
+                </div>
+                </div>
+                 <div class="map">
+                   <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af5ffc430b7af9072c972394bd508bee6082765f5518d69232919e5d67344e231&amp;source=constructor" width="400" height="300" frameborder="0"></iframe>                 
+                </div> 
+            </div>
+        </div>
+    </section>
+
+<!-- ПОДВАЛ -->
+<footer>
+    <div class="container">
+        <div class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="paintball.html">Пейнтбол</a>
+            <a href="lasertag.html">Лазертаг</a>
+            <a href="strikeball.html">Страйкбол</a>
+            <a href="kvesty.html">Квесты</a>
+            <a href="applied_sports.html">Прикладные виды спорта</a>
+            <a href="bpm.html">БПМ</a>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 30px;">
+            <p>© 2025 Корпорация активного отдыха БаттлПарк.  Все права защищены.</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">Экстремальный отдых, командные игры и незабываемые эмоции</p>
+        </div>
+    </div>
+</footer>
+</script>
+    <!-- Подключаем наш файл с корзиной -->
+<script src="cart.js"></script>
+<!-- КНОПКА "НАВЕРХ" -->
+<button class="scroll-top-btn" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Кнопка "Наверх"
+    (function() {
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        if (!scrollBtn) return;
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('show');
+            } else {
+                scrollBtn.classList.remove('show');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    })();
+</script>
+</body>
+</html>

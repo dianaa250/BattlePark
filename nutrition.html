@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Питание | БАТТЛПАРК</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER (скопирован с исходного) -->
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="images/photo_2026-05-28_11-14-37.jpg" alt="Логотип БаттлПарк" style="width: 50px; height: 60px;" class="logo-icon">
+            <div class="logo-text">
+                <h1><span>БАТТЛПАРК</span></h1>
+                <p>корпорация активного отдыха</p>
+                <p><a href="https://vk.com/cpvgvardiy">АНО ЦПВ "ГВАРДИЯ"</a></p>
+            </div>
+        </div>
+        <div class="nav-pages">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="#booking" class="btn-red">Запись</a>
+            <a href="cart.html" style="position:relative;text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" style="display:none;background:red;color:white;border-radius:50%;padding:2px 6px;font-size:12px;position:absolute;top:-10px;right:-15px;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO (изображение с едой) -->
+<section class="hero">
+    <div class="hero-content">
+        <h1><span>ПИТАНИЕ</span> НА МЕРОПРИЯТИЯХ</h1>
+        <p>Вкусно, сытно и разнообразно для вашей команды. Закажите питание на игру прямо сейчас.</p>
+        <a href="#food-catalog" class="hero-btn">Выбрать меню</a>
+    </div>
+</section>
+
+<!-- ABOUT - что такое питание в БаттлПарке -->
+<section class="about">
+    <div class="container about-grid">
+        <div>
+            <h2 class="section-title">Питание от <span>БаттлПарк</span></h2>
+            <p>После активной игры так и хочется подкрепиться. Мы предлагаем полноценное питание для команд, которое можно заказать вместе с тарифом или отдельно.</p>
+            <p>В меню — сытные обеды на полевой кухне, ароматный шашлык, горячий чай/кофе и кейтеринг любого формата. Сделаем ваш отдых ещё ярче и вкуснее!</p>
+            <p>Адаптируем меню под любые пожелания и диетические ограничения. Всё свежее, приготовлено на месте или доставлено точно к началу вашего мероприятия.</p>
+        </div>
+        <div class="photo-placeholder">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Полевая кухня" class="about-photo">
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES (почему выбирают наше питание) -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title" style="text-align:center;">Почему заказывают питание <span>у нас</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Свежее приготовление</h3>
+                <p>Готовим на месте или привозим в термосах, сохраняя температуру и вкус.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Любое количество персон</h3>
+                <p>Просчитаем меню как для 5, так и для 200 гостей — всегда вкусно и без очередей.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Индивидуальный подход</h3>
+                <p>Вегетарианское, детское, постное меню — учтём любые предпочтения вашей команды.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== БЛОК ПИТАНИЯ. КАТЕГОРИИ: ПОЛЕВАЯ КУХНЯ, ЧАЙ И КОФЕ, ШАШЛЫК АССОРТИ, КЕЙТЕРИНГ ========== -->
+<section id="food-catalog" class="pricing-section">
+    <div class="container">
+        <div style="text-align: center;">
+            <span class="tariff-badge"><i class="fas fa-tags"></i> вкусные опции</span>
+            <h2 class="section-title">Выберите формат <span>питания</span></h2>
+            <div class="pricing-sub">
+                Добавьте еду к любому игровому тарифу или закажите отдельно для своего события.
+            </div>
+        </div>
+
+        <!-- 1. ПОЛЕВАЯ КУХНЯ (основные блюда) -->
+        <h3 style="font-size: 28px; margin-bottom: 20px; text-align: center;">🏕️ Полевая кухня</h3>
+        <div class="pricing-grid">
+            <div id="field-kitchen-1" class="price-card">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Гречневая каша с тушенкой</h3>
+                <div class="price-value">350 ₽<small>/порция</small></div>
+                <p>Сытная гречка с нежной говяжьей тушенкой — классика полевой кухни.</p>
+                <button class="add-to-cart-btn" data-id="field_porridge" data-name="Гречневая каша с тушенкой" data-price="350">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="field-kitchen-2" class="price-card">
+                <i class="fas fa-utensil-spoon"></i>
+                <h3>Солдатская каша (перловая)</h3>
+                <div class="price-value">320 ₽<small>/порция</small></div>
+                <p>Перловка с мясом и овощами — настоящий вкус походной кухни.</p>
+                <button class="add-to-cart-btn" data-id="field_barley" data-name="Солдатская каша (перловая)" data-price="320">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="field-kitchen-3" class="price-card">
+                <i class="fas fa-bread-slice"></i>
+                <h3>Фронтовой суп (гороховый)</h3>
+                <div class="price-value">280 ₽<small>/порция</small></div>
+                <p>Густой гороховый суп с копченостями и сухариками.</p>
+                <button class="add-to-cart-btn" data-id="field_soup" data-name="Фронтовой суп (гороховый)" data-price="280">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 2. ЧАЙ И КОФЕ (напитки) -->
+        <h3 style="font-size: 28px; margin-bottom: 20px; text-align: center;">☕ Чай и кофе</h3>
+        <div class="pricing-grid">
+            <div id="tea-coffee-1" class="price-card">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Горячий чай (черный/зеленый)</h3>
+                <div class="price-value">100 ₽<small>/чашка</small></div>
+                <p>Ароматный чай с сахаром и лимоном. Согреет после игры.</p>
+                <button class="add-to-cart-btn" data-id="hot_tea" data-name="Горячий чай" data-price="100">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="tea-coffee-2" class="price-card">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Американо / Эспрессо</h3>
+                <div class="price-value">150 ₽<small>/чашка</small></div>
+                <p>Насыщенный кофе из зерен арабики.</p>
+                <button class="add-to-cart-btn" data-id="coffee_americano" data-name="Кофе Американо" data-price="150">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="tea-coffee-3" class="price-card">
+                <i class="fas fa-cocktail"></i>
+                <h3>Какао с маршмеллоу</h3>
+                <div class="price-value">180 ₽<small>/чашка</small></div>
+                <p>Нежное какао с зефирками — отличный вариант для детей и сладкоежек.</p>
+                <button class="add-to-cart-btn" data-id="cocoa" data-name="Какао с маршмеллоу" data-price="180">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 3. ШАШЛЫК АССОРТИ (мясное меню) -->
+        <h3 style="font-size: 28px; margin-bottom: 20px; text-align: center;">🍢 Шашлык ассорти</h3>
+        <div class="pricing-grid">
+            <div id="shashlik-1" class="price-card">
+                <i class="fas fa-drumstick-bite"></i>
+                <h3>Шашлык из свинины</h3>
+                <div class="price-value">550 ₽<small>/порция (250г)</small></div>
+                <p>Сочная свинина, маринованная по авторскому рецепту.</p>
+                <button class="add-to-cart-btn" data-id="pork_shashlik" data-name="Шашлык из свинины" data-price="550">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="shashlik-2" class="price-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Шашлык из куриного филе</h3>
+                <div class="price-value">490 ₽<small>/порция (250г)</small></div>
+                <p>Нежное филе в йогуртовом маринаде — диетический вариант.</p>
+                <button class="add-to-cart-btn" data-id="chicken_shashlik" data-name="Шашлык из куриного филе" data-price="490">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="shashlik-3" class="price-card">
+                <i class="fas fa-egg"></i>
+                <h3>Овощи гриль + лаваш</h3>
+                <div class="price-value">320 ₽<small>/порция</small></div>
+                <p>Сладкий перец, цукини, баклажаны на мангале с соусом.</p>
+                <button class="add-to-cart-btn" data-id="grill_veggies" data-name="Овощи гриль + лаваш" data-price="320">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 4. КЕЙТЕРИНГ (комплексные обеды) -->
+        <h3 style="font-size: 28px; margin-bottom: 20px; text-align: center;">🍱 Кейтеринг (готовые наборы)</h3>
+        <div class="package-grid">
+            <div id="catering-standart" class="package-card">
+                <i class="fas fa-box-open" style="font-size: 40px; color: var(--red); margin-bottom: 10px;"></i>
+                <h3>Кейтеринг «Стандарт»</h3>
+                <div class="package-price">1 250 ₽<small>/чел</small></div>
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> Горячее блюдо на выбор (каша или суп)</li>
+                    <li><i class="fas fa-check-circle"></i> Хлеб, масло, 2 вида закусок</li>
+                    <li><i class="fas fa-check-circle"></i> Чай/кофе + печенье</li>
+                    <li><i class="fas fa-check-circle"></i> Одноразовая посуда</li>
+                </ul>
+                <button class="add-to-cart-btn" data-id="catering_standard" data-name="Кейтеринг Стандарт (на 1 чел)" data-price="1250">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="catering-premium" class="package-card premium">
+                <i class="fas fa-crown" style="font-size: 40px; color: var(--red); margin-bottom: 10px;"></i>
+                <h3>Кейтеринг «Баттл-пикник»</h3>
+                <div class="package-price">2 250 ₽<small>/чел</small></div>
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> Шашлык ассорти (2 вида мяса)</li>
+                    <li><i class="fas fa-check-circle"></i> Гарнир (картофель, овощи гриль)</li>
+                    <li><i class="fas fa-check-circle"></i> Свежие овощи, соусы, зелень</li>
+                    <li><i class="fas fa-check-circle"></i> Фруктовая нарезка, десерт</li>
+                    <li><i class="fas fa-check-circle"></i> Кофе/чай + лимонад</li>
+                    <li><i class="fas fa-check-circle"></i> Сервировка под заказ</li>
+                </ul>
+                <button class="add-to-cart-btn" data-id="catering_premium" data-name="Кейтеринг Баттл-пикник (на 1 чел)" data-price="2250">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+
+            <div id="catering-vip" class="package-card">
+                <i class="fas fa-champagne-glasses" style="font-size: 40px; color: var(--red); margin-bottom: 10px;"></i>
+                <h3>VIP-кейтеринг «Командирский»</h3>
+                <div class="package-price">3 750 ₽<small>/чел</small></div>
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> Расширенное меню: мясо, рыба, морепродукты</li>
+                    <li><i class="fas fa-check-circle"></i> Два горячих блюда + закуски</li>
+                    <li><i class="fas fa-check-circle"></i> Именинный торт/пирожное</li>
+                    <li><i class="fas fa-check-circle"></i> Фруктовая тарелка, сок/морс</li>
+                    <li><i class="fas fa-check-circle"></i> Отдельный стол + персональный повар</li>
+                </ul>
+                <button class="add-to-cart-btn" data-id="catering_vip" data-name="VIP-кейтеринг Командирский (на 1 чел)" data-price="3750">
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="btn-text">В корзину</span>
+                    <span class="btn-success"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="pricing-note">
+            <i class="fas fa-info-circle"></i> Питание можно добавить к любому тарифу. Для групп от 8 человек — скидка 10% на кейтеринг. Готовим под заказ, сообщите об аллергиях и предпочтениях при бронировании.
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Проголодались?</h2>
+    <p>Добавьте питание к своему пакету — сделайте отдых ещё вкуснее!</p>
+    <a href="#booking" class="hero-btn">Забронировать с питанием</a>
+</section>
+
+<!-- Блок записи + контакты (тот же, что в исходном коде) -->
+<section id="booking" class="form-section">
+    <div class="container form-grid">
+        <div class="form-box">
+            <h3 style="font-size: 1.8rem; margin-bottom: 24px;">Запись на мероприятие</h3>
+            <form id="bookingForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Телефон (+7...)" required>
+                <textarea rows="2" placeholder="Дата, количество человек, пожелания по питанию..."></textarea>
+                <div id="phoneError" class="error-msg">Введите корректный номер телефона (10 цифр)</div>
+                <button type="submit" class="btn-submit"><i class="fas fa-calendar-check"></i> Отправить заявку</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Контакты</h3>
+            <p><i class="fas fa-phone-alt" style="color:#D32F2F;"></i> <strong>+7 (495) 799 2850</strong></p>
+            <p><i class="fas fa-envelope"></i> info@gvardiya-battle.ru</p>
+            <p><i class="fas fa-map-marker-alt"></i> Адрес офиса: Москва, поселение Воскресенское, Ямонтово, ул. Звездная, д. 30 стр.2</p>
+            <p><i class="fas fa-location-dot"></i> Площадка: Москва, район Троицк, ул. Армейская д.28 (15 км от МКАД)</p>
+        </div>
+        <div class="map" style="flex:1; min-width: 260px;">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af5ffc430b7af9072c972394bd508bee6082765f5518d69232919e5d67344e231&amp;source=constructor" width="100%" height="300" frameborder="0" style="border-radius: 28px;"></iframe>                 
+        </div> 
+    </div>
+</section>
+
+<!-- ПОДВАЛ -->
+<footer>
+    <div class="container">
+        <div class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="paintball.html">Пейнтбол</a>
+            <a href="lasertag.html">Лазертаг</a>
+            <a href="strikeball.html">Страйкбол</a>
+            <a href="kvesty.html">Квесты</a>
+            <a href="applied_sports.html">Прикладные виды спорта</a>
+            <a href="bpm.html">БПМ</a>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 30px;">
+            <p>© 2025 Корпорация активного отдыха БаттлПарк.  Все права защищены.</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">Экстремальный отдых, командные игры и незабываемые эмоции</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Валидация телефона
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const phoneInput = document.getElementById('phone');
+        const phoneVal = phoneInput.value.replace(/\D/g, '');
+        const errorSpan = document.getElementById('phoneError');
+        if(phoneVal.length < 10 || phoneVal.length > 11) {
+            errorSpan.style.display = 'block';
+            return;
+        }
+        errorSpan.style.display = 'none';
+        alert('Спасибо, заявка отправлена! Менеджер свяжется с вами в ближайшее время.');
+        this.reset();
+    });
+    
+    // Простая имитация добавления в корзину (если подключен cart.js - будет работать с ним)
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const id = this.getAttribute('data-id');
+            const name = this.getAttribute('data-name');
+            const price = parseInt(this.getAttribute('data-price'));
+            
+            // Имитация добавления (для сайта без отдельного cart.js)
+            console.log(`Добавлено: ${name} (${price} ₽)`);
+            
+            // Визуальный фидбек
+            this.classList.add('added');
+            setTimeout(() => {
+                this.classList.remove('added');
+            }, 800);
+            
+            // Здесь можно вызвать функцию из cart.js, если он подключен:
+            if (typeof addToCart === 'function') {
+                addToCart({ id, name, price, quantity: 1 });
+            } else {
+                alert(`"${name}" добавлен в корзину!`);
+            }
+        });
+    });
+</script>
+<!-- Если есть отдельный cart.js, он переопределит логику кнопок -->
+<script src="cart.js"></script>
+<!-- КНОПКА "НАВЕРХ" -->
+<button class="scroll-top-btn" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Кнопка "Наверх"
+    (function() {
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        if (!scrollBtn) return;
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('show');
+            } else {
+                scrollBtn.classList.remove('show');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    })();
+</script>
+</body>
+</html>

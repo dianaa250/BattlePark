@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Тарифы | БАТТЛПАРК</title>
+    <meta name="description" content="Цены на пейнтбол, лазертаг, страйкбол, квесты, прикладные виды спорта, питание и размещение в БаттлПарк. Группы от 8 человек. Дополнительные опции от 1 шт.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== ШАПКА (ТОЧНО КАК В INDEX.HTML) ========== -->
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="images/photo_2026-05-28_11-14-37.jpg" alt="Логотип БаттлПарк" style="width: 50px; height: 60px;" class="logo-icon">
+            <div class="logo-text">
+                <h1><span>БАТТЛПАРК</span></h1>
+                <p>корпорация активного отдыха</p>
+                <p><a href="https://vk.com/cpvgvardiy">АНО ЦПВ "ГВАРДИЯ"</a></p>
+            </div>
+        </div>
+        <div class="nav-pages">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="#booking" class="btn-red">Запись</a>
+            <a href="cart.html" style="position:relative;text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" style="display:none;background:red;color:white;border-radius:50%;padding:2px 6px;font-size:12px;position:absolute;top:-10px;right:-15px;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<a href="#booking" class="floating-button">Забронировать</a>
+
+<!-- Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1>Наши <span>Тарифы</span></h1>
+        <p>Выберите формат игры или дополнительную опцию. Группам от 20 игроков — подарки!</p>
+    </div>
+</section>
+
+<!-- ==================== ПЕЙНТБОЛ ==================== -->
+<section class="tariffs-main">
+    <div class="container">
+        <h2 id="paintball" class="section-title">ПЕЙНТБОЛ</h2>
+        <p class="section-subtitle">Включено: 500 шаров, костюм, маска HELIX термо, перчатки, бандана, заправка воздухом, судейство. Девушкам и детям — защитные жилеты бесплатно. Группа от 8 человек.</p>
+
+        <div class="row-top">
+            <div class="tariff-card">
+                <h3 class="tariff-title">ВЗРОСЛЫЕ (от 18 лет)</h3>
+                <div class="tariff-price">
+                    <span class="price">2 500</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-check-circle"></i> 500 шаров</li>
+                    <li><i class="fas fa-check-circle"></i> Костюм + маска HELIX термо</li>
+                    <li><i class="fas fa-check-circle"></i> Перчатки + бандана</li>
+                    <li><i class="fas fa-check-circle"></i> Заправка воздухом</li>
+                    <li><i class="fas fa-check-circle"></i> Судейство</li>
+                </ul>
+                <button class="add-to-cart-btn" data-id="paintball_adult" data-name="Пейнтбол взрослые" data-price="2500" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ДЕТИ ДО 17 ЛЕТ</h3>
+                <div class="tariff-price">
+                    <span class="price">2 500</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <ul class="tariff-list">
+                    <li><i class="fas fa-check-circle"></i> 500 шаров</li>
+                    <li><i class="fas fa-check-circle"></i> Костюм + маска HELIX термо</li>
+                    <li><i class="fas fa-check-circle"></i> Защитный жилет (бесплатно)</li>
+                    <li><i class="fas fa-check-circle"></i> Судейство</li>
+                </ul>
+                <button class="add-to-cart-btn" data-id="paintball_child" data-name="Пейнтбол дети до 17 лет" data-price="2500" data-min="8">В корзину</button>
+            </div>
+        </div>
+
+        <h3 style="font-size: 1.5rem; margin: 40px 0 20px 0; text-align: center;">Дополнительные опции</h3>
+        <div class="row-bottom">
+            <div class="tariff-card">
+                <h3 class="tariff-title">ЗАЩИТНЫЙ ЖИЛЕТ</h3>
+                <div class="tariff-price">
+                    <span class="price">400</span> <span class="currency">₽</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <button class="add-to-cart-btn" data-id="armor_vest" data-name="Защитный жилет" data-price="400" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ШАРЫ (2000 шт.)</h3>
+                <div class="tariff-price">
+                    <span class="price">3 750</span> <span class="currency">₽</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <button class="add-to-cart-btn" data-id="balls_2000" data-name="Шары 2000 шт" data-price="3750" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ДЫМОВАЯ ШАШКА</h3>
+                <div class="tariff-price">
+                    <span class="price">450</span> <span class="currency">₽</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <button class="add-to-cart-btn" data-id="smoke_grenade" data-name="Дымовая шашка" data-price="450" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ДЛИННЫЙ СТВОЛ</h3>
+                <div class="tariff-price">
+                    <span class="price">450</span> <span class="currency">₽</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <button class="add-to-cart-btn" data-id="long_barrel" data-name="Длинный ствол" data-price="450" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ГРАНАТА</h3>
+                <div class="tariff-price">
+                    <span class="price">450</span> <span class="currency">₽</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <button class="add-to-cart-btn" data-id="grenade" data-name="Граната" data-price="450" data-min="1">В корзину</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Дополнительные услуги: обучение тактике и апгрейд оборудования -->
+<div class="row-bottom" style="margin-top: 30px;">
+    <div class="tariff-card">
+        <h3 class="tariff-title">ОБУЧЕНИЕ ТАКТИКЕ</h3>
+        <div class="tariff-price">
+            <span class="price">1 500</span> <span class="currency">₽/чел</span>
+            <div class="price-caption">от 8 человек</div>
+        </div>
+        <ul class="tariff-list">
+            <li><i class="fas fa-check-circle"></i> Тактические построения</li>
+            <li><i class="fas fa-check-circle"></i> Координация в команде</li>
+            <li><i class="fas fa-check-circle"></i> Нападение и оборона</li>
+            <li><i class="fas fa-check-circle"></i> Практические занятия на поле</li>
+        </ul>
+        <button class="add-to-cart-btn" data-id="tactics_training" data-name="Обучение тактике пейнтбола" data-price="1500" data-min="8">В корзину</button>
+    </div>
+
+    <div class="tariff-card">
+        <h3 class="tariff-title">АПГРЕЙД МАРКЕРА</h3>
+        <div class="tariff-price">
+            <span class="price">от 1 000</span> <span class="currency">₽</span>
+            <div class="price-caption">за услугу</div>
+        </div>
+        <ul class="tariff-list">
+            <li><i class="fas fa-check-circle"></i> Увеличение скорострельности</li>
+            <li><i class="fas fa-check-circle"></i> Оптимизация подачи шаров</li>
+            <li><i class="fas fa-check-circle"></i> Настройка системы газа</li>
+            <li><i class="fas fa-check-circle"></i> Установка прицелов</li>
+        </ul>
+        <button class="add-to-cart-btn" data-id="equipment_upgrade" data-name="Апгрейд пейнтбольного маркера" data-price="1000" data-min="1">В корзину</button>
+    </div>
+</div>
+
+<!-- ==================== ЛАЗЕРТАГ ==================== -->
+<section class="tariffs-main" style="background: var(--light-gray);">
+    <div class="container">
+        <h2 id="lasertag" class="section-title">ЛАЗЕРТАГ</h2>
+        <p class="section-subtitle">Включено: тагер (лазерный имитатор), повязка с датчиками, цветная бандана, судейство. Группа от 8 человек.</p>
+
+        <div class="row-top">
+            <div class="tariff-card">
+                <h3 class="tariff-title">ПЕРВЫЙ ЧАС ИГРЫ</h3>
+                <div class="tariff-price">
+                    <span class="price">1 150</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <button class="add-to-cart-btn" data-id="lasertag_1hour" data-name="Лазертаг 1 час" data-price="1150" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">КАЖДЫЙ СЛЕДУЮЩИЙ ЧАС</h3>
+                <div class="tariff-price">
+                    <span class="price">900</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <button class="add-to-cart-btn" data-id="lasertag_next_hour" data-name="Лазертаг доп. час" data-price="900" data-min="8">В корзину</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ПРИКЛАДНЫЕ ВИДЫ СПОРТА ==================== -->
+<section class="tariffs-main">
+    <div class="container">
+        <h2 id="applied-sports" class="section-title">ПРИКЛАДНЫЕ ВИДЫ СПОРТА</h2>
+        <p class="section-subtitle">Включено: судейство, инвентарь, расходные материалы. Группа от 8 человек.</p>
+
+        <div class="row-bottom">
+            <div class="tariff-card">
+                <h3 class="tariff-title">ПОЛОСА ПРЕПЯТСТВИЙ</h3>
+                <div class="tariff-price">
+                    <span class="price">400</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">200 метров по пересечённой местности</p>
+                <button class="add-to-cart-btn" data-id="obstacle_course" data-name="Полоса препятствий" data-price="400" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ТАКТИЧЕСКАЯ МЕДИЦИНА</h3>
+                <div class="tariff-price">
+                    <span class="price">600</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">Первая помощь, осмотр, эвакуация</p>
+                <button class="add-to-cart-btn" data-id="first_aid" data-name="Тактическая медицина" data-price="600" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">МЕТАНИЕ НОЖЕЙ</h3>
+                <div class="tariff-price">
+                    <span class="price">400</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">5 ножей, 2 стенда, инструктор</p>
+                <button class="add-to-cart-btn" data-id="knife_throwing" data-name="Метание ножей" data-price="400" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">МЕТАНИЕ ГРАНАТ (спорт)</h3>
+                <div class="tariff-price">
+                    <span class="price">300</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">3 гранаты, мишени, инструктор</p>
+                <button class="add-to-cart-btn" data-id="grenade_throwing_sport" data-name="Метание гранат (спорт)" data-price="300" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">МЕТАНИЕ ГРАНАТ (пиро)</h3>
+                <div class="tariff-price">
+                    <span class="price">900</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">2 гранаты (пиротехника), мишени</p>
+                <button class="add-to-cart-btn" data-id="grenade_throwing_piro" data-name="Метание гранат (пиро)" data-price="900" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ТИР (пневматика)</h3>
+                <div class="tariff-price">
+                    <span class="price">500</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">2 направления, 2 инструктора</p>
+                <button class="add-to-cart-btn" data-id="shooting_range" data-name="Тир" data-price="500" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ВЕРЁВОЧНЫЙ КУРС</h3>
+                <div class="tariff-price">
+                    <span class="price">1 000</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">4 этапа, 2 инструктора</p>
+                <button class="add-to-cart-btn" data-id="rope_course" data-name="Веревочный курс" data-price="1000" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ПЕРЕТЯГИВА НИЕ КАНАТА</h3>
+                <div class="tariff-price">
+                    <span class="price">250</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">1 инструктор</p>
+                <button class="add-to-cart-btn" data-id="tug_of_war" data-name="Перетягивание каната" data-price="250" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">СБОРКА/РАЗБОРКА АК</h3>
+                <div class="tariff-price">
+                    <span class="price">400</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">1 инструктор</p>
+                <button class="add-to-cart-btn" data-id="ak_assembly" data-name="Сборка/разборка АК" data-price="400" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">УСТАНОВКА ПАЛАТКИ</h3>
+                <div class="tariff-price">
+                    <span class="price">400</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">Палатка + узлы, 1 инструктор</p>
+                <button class="add-to-cart-btn" data-id="tent_setup" data-name="Установка палатки" data-price="400" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ОРИЕНТИРОВА НИЕ</h3>
+                <div class="tariff-price">
+                    <span class="price">400</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">Топография, 1 инструктор</p>
+                <button class="add-to-cart-btn" data-id="orientation" data-name="Ориентирование" data-price="400" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ТАКТИКА (коридор)</h3>
+                <div class="tariff-price">
+                    <span class="price">850</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">Стрелковый коридор, холостые патроны</p>
+                <button class="add-to-cart-btn" data-id="tactics" data-name="Тактика" data-price="850" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ПОДГОТОВКА К ГТО</h3>
+                <div class="tariff-price">
+                    <span class="price">800</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">5 нормативов</p>
+                <button class="add-to-cart-btn" data-id="gto" data-name="Подготовка к ГТО" data-price="800" data-min="8">В корзину</button>
+            </div>
+
+           <div class="tariff-card">
+    <h3 class="tariff-title">ШКОЛА БЕЗОПАСНОС ТИ</h3>
+    <div class="tariff-price">
+        <span class="price">1 000</span> <span class="currency">₽/чел</span>
+    </div>
+    <p class="price-note">Огнетушение, спасение на воде, первая помощь</p>
+    <button class="add-to-cart-btn" data-id="safety_school" data-name="Школа безопасности" data-price="1000" data-min="8">В корзину</button>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== КВЕСТЫ ==================== -->
+<section class="tariffs-main" style="background: var(--light-gray);">
+    <div class="container">
+        <h2 id="kvest" class="section-title">КВЕСТЫ</h2>
+        <p class="section-subtitle">Включено: сценарий, инвентарь, оборудование, ведущий. Группа от 8 человек.</p>
+
+        <div class="row-top">
+            <div class="tariff-card">
+                <h3 class="tariff-title">КВЕСТ 1 ЧАС</h3>
+                <div class="tariff-price">
+                    <span class="price">2 000</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <p class="price-note">Военно-спортивные / познавательные</p>
+                <button class="add-to-cart-btn" data-id="kvest_1hour" data-name="Квест 1 час" data-price="2000" data-min="8">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">КВЕСТ 2-4 ЧАСА</h3>
+                <div class="tariff-price">
+                    <span class="price">3 000</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">наличный расчёт</div>
+                </div>
+                <p class="price-note">Многоэтапная программа</p>
+                <button class="add-to-cart-btn" data-id="kvest_2_4hours" data-name="Квест 2-4 часа" data-price="3000" data-min="8">В корзину</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ПИТАНИЕ ==================== -->
+<section class="tariffs-main">
+    <div class="container">
+        <h2 id="nutrition" class="section-title">ПИТАНИЕ</h2>
+
+        <div class="row-bottom">
+            <div class="tariff-card">
+                <h3 class="tariff-title">ПОЛЕВАЯ КУХНЯ</h3>
+                <div class="tariff-price">
+                    <span class="price">370</span> <span class="currency">₽/чел</span>
+                    <div class="price-caption">от 30 чел / наличный</div>
+                </div>
+                <p class="price-note">Каша, тушёнка, чай, хлеб</p>
+                <button class="add-to-cart-btn" data-id="field_kitchen" data-name="Полевая кухня" data-price="370" data-min="30">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ЧАЙ С САХАРОМ</h3>
+                <div class="tariff-price">
+                    <span class="price">3 500</span> <span class="currency">₽</span>
+                </div>
+                <p class="price-note">Термос 12л (60 порций)</p>
+                <button class="add-to-cart-btn" data-id="tea" data-name="Чай 12л" data-price="3500" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ШАШЛЫК АССОРТИ</h3>
+                <div class="tariff-price">
+                    <span class="price">1 100</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">300гр, лаваш, овощи</p>
+                <button class="add-to-cart-btn" data-id="kebab" data-name="Шашлык" data-price="1100" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">КЕЙТЕРИНГ</h3>
+                <div class="tariff-price">
+                    <span class="price">от 2 000</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">Ресторан отеля, меню под заказ</p>
+                <button class="add-to-cart-btn" data-id="catering" data-name="Кейтеринг" data-price="2000" data-min="1">В корзину</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== РАЗМЕЩЕНИЕ ГОСТЕЙ ==================== -->
+<section class="tariffs-main" style="background: var(--light-gray);">
+    <div class="container">
+        <h2 id="guest-accommodation" class="section-title">РАЗМЕЩЕНИЕ ГОСТЕЙ</h2>
+
+        <div class="row-bottom">
+            <div class="tariff-card">
+                <h3 class="tariff-title">ГОСТЕВАЯ ЗОНА</h3>
+                <div class="tariff-price">
+                    <span class="price">200</span> <span class="currency">₽/чел</span>
+                </div>
+                <p class="price-note">Столики+лавочки+мангал / 4 часа</p>
+                <button class="add-to-cart-btn" data-id="guest_area" data-name="Гостевая зона" data-price="200" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ШАТЁР 3,5×3,5 м</h3>
+                <div class="tariff-price">
+                    <span class="price">4 000</span> <span class="currency">₽</span>
+                </div>
+                <p class="price-note">До 12 человек / 4 часа</p>
+                <button class="add-to-cart-btn" data-id="tent" data-name="Шатёр" data-price="4000" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">ВЕРАНДА 5×6 м</h3>
+                <div class="tariff-price">
+                    <span class="price">6 000</span> <span class="currency">₽</span>
+                </div>
+                <p class="price-note">До 30 человек / 4 часа + час в подарок</p>
+                <button class="add-to-cart-btn" data-id="veranda" data-name="Веранда" data-price="6000" data-min="1">В корзину</button>
+            </div>
+
+            <div class="tariff-card">
+                <h3 class="tariff-title">АРМЕЙСКАЯ ПАЛАТКА</h3>
+                <div class="tariff-price">
+                    <span class="price">16 000</span> <span class="currency">₽</span>
+                </div>
+                <p class="price-note">5,5×5,5 м, до 30 человек / день</p>
+                <button class="add-to-cart-btn" data-id="army_tent" data-name="Армейская палатка" data-price="16000" data-min="1">В корзину</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- БЛОК: КАК ПРОХОДИТ МЕРОПРИЯТИЕ (ПОШАГОВО) -->
+<section class="how-it-works" style="padding: 60px 0; background: white;">
+    <div class="container">
+        <h2 class="section-title">Как проходит <span>мероприятие</span></h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 40px;">
+            <div style="text-align: center;">
+                <div style="width: 70px; height: 70px; background: #D32F2F; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 28px; font-weight: bold;">1</div>
+                <h4>Приезд и сбор</h4>
+                <p>Приезжаете на площадку, знакомитесь с инструктором</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 70px; height: 70px; background: #D32F2F; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 28px; font-weight: bold;">2</div>
+                <h4>Инструктаж</h4>
+                <p>Правила игры, техника безопасности, выдача экипировки</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 70px; height: 70px; background: #D32F2F; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 28px; font-weight: bold;">3</div>
+                <h4>Игра</h4>
+                <p>От 1 до 4 часов активного боя по выбранному сценарию</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 70px; height: 70px; background: #D32F2F; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 28px; font-weight: bold;">4</div>
+                <h4>Отдых и питание</h4>
+                <p>Шашлык, чай, общение, обсуждение игры</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК: ПРАВИЛА И ПРОТИВОПОКАЗАНИЯ -->
+<section class="rules-section" style="padding: 60px 0; background: var(--light-gray);">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px;">
+            <div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 20px;"><i class="fas fa-shield-alt" style="color: #D32F2F;"></i> Правила игры</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check-circle" style="color: #D32F2F; margin-right: 10px;"></i> Маску нельзя снимать на поле</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check-circle" style="color: #D32F2F; margin-right: 10px;"></i> При попадании — поднять руку и выйти с поля</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check-circle" style="color: #D32F2F; margin-right: 10px;"></i> Не стрелять в упор (дистанция от 3 метров)</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check-circle" style="color: #D32F2F; margin-right: 10px;"></i> Слушаться инструктора и судей</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check-circle" style="color: #D32F2F; margin-right: 10px;"></i> Запрещена физическая агрессия</li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 20px;"><i class="fas fa-heartbeat" style="color: #D32F2F;"></i> Противопоказания</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;"><i class="fas fa-times-circle" style="color: #999; margin-right: 10px;"></i> Беременность</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-times-circle" style="color: #999; margin-right: 10px;"></i> Сердечно-сосудистые заболевания</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-times-circle" style="color: #999; margin-right: 10px;"></i> Эпилепсия</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-times-circle" style="color: #999; margin-right: 10px;"></i> Алкогольное/наркотическое опьянение</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-times-circle" style="color: #999; margin-right: 10px;"></i> Психические расстройства</li>
+                </ul>
+                <p style="margin-top: 20px; font-size: 0.85rem; color: #666;">⚠️ При наличии хронических заболеваний — проконсультируйтесь с врачом заранее.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК: FAQ (ЧАСТЫЕ ВОПРОСЫ) -->
+<section class="faq-section" style="padding: 60px 0; background: white;">
+    <div class="container">
+        <h2 class="section-title">Часто задаваемые <span>вопросы</span></h2>
+        <div style="max-width: 800px; margin: 40px auto 0;">
+            
+            <details style="background: #f5f5f5; border-radius: 16px; padding: 20px; margin-bottom: 15px;">
+                <summary style="font-weight: 700; cursor: pointer;"><span>🔫 Что взять с собой на игру?</span></summary>
+                <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">Удобную спортивную одежду по погоде, сменную обувь, воду, перекус. Всё остальное (экипировка, оружие) выдаём на месте.</p>
+            </details>
+            <details style="background: #f5f5f5; border-radius: 16px; padding: 20px; margin-bottom: 15px;">
+                <summary style="font-weight: 700; cursor: pointer;"><span>👕 Нужно ли брать свою экипировку?</span></summary>
+                <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">Нет, мы выдаём всё необходимое: маску, костюм, перчатки, бандану, маркер. Принести нужно только желание играть!</p>
+            </details>
+            <details style="background: #f5f5f5; border-radius: 16px; padding: 20px; margin-bottom: 15px;">
+                <summary style="font-weight: 700; cursor: pointer;"><span>👶 С какого возраста можно участвовать?</span></summary>
+                <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">С 8 лет в сопровождении взрослых. Для детей до 14 лет — лазертаг (безопаснее) или облегчённый пейнтбол с защитными жилетами.</p>
+            </details>
+            <details style="background: #f5f5f5; border-radius: 16px; padding: 20px; margin-bottom: 15px;">
+                <summary style="font-weight: 700; cursor: pointer;"><span>💰 Нужна ли предоплата?</span></summary>
+                <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">Для групп от 20 человек возможна предоплата 30%. Для остальных — оплата на месте наличными или картой.</p>
+            </details>
+            <details style="background: #f5f5f5; border-radius: 16px; padding: 20px; margin-bottom: 15px;">
+                <summary style="font-weight: 700; cursor: pointer;"><span>🚗 Есть ли парковка?</span></summary>
+                <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">Да, бесплатная охраняемая парковка на 150 мест.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ФОРМА ЗАПИСИ -->
+<section id="booking" class="form-section">
+    <div class="container form-grid">
+        <div class="form-box">
+            <h3 style="font-size: 1.8rem; margin-bottom: 24px;">Запись на мероприятие</h3>
+            <form id="bookingForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Телефон (+7...)" required>
+                <textarea rows="3" placeholder="Дата, количество человек, выбранные тарифы..."></textarea>
+                <div id="phoneError" class="error-msg">Введите корректный номер телефона (10 цифр)</div>
+                <button type="submit" class="btn-submit"><i class="fas fa-calendar-check"></i> Отправить заявку</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Контакты</h3>
+            <p><i class="fas fa-phone-alt" style="color:#D32F2F;"></i> <strong>+7 (495) 799 2850</strong></p>
+            <p><i class="fas fa-envelope"></i> info@gvardiya-battle.ru</p>
+            <p><i class="fas fa-map-marker-alt"></i> Москва, поселение Воскресенское, Ямонтово, ул. Звездная, д. 30 стр.2</p>
+            <p><i class="fas fa-location-dot"></i> Площадка: Троицк, ул. Армейская д.28</p>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af5ffc430b7af9072c972394bd508bee6082765f5518d69232919e5d67344e231&amp;source=constructor" width="100%" height="200" frameborder="0" style="border-radius: 20px; margin-top: 20px;"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Цены и акции</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="paintball.html">Пейнтбол</a>
+            <a href="lasertag.html">Лазертаг</a>
+            <a href="strikeball.html">Страйкбол</a>
+            <a href="kvesty.html">Квесты</a>
+            <a href="applied_sports.html">Прикладные виды спорта</a>
+            <a href="bpm.html">БПМ</a>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 30px;">
+            <p>© 2025 Корпорация активного отдыха БаттлПарк. Все права защищены.</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">Группам от 20 игроков — подарки!</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const phoneVal = document.getElementById('phone').value.replace(/\D/g, '');
+        if(phoneVal.length < 10 || phoneVal.length > 11) {
+            document.getElementById('phoneError').style.display = 'block';
+            return;
+        }
+        document.getElementById('phoneError').style.display = 'none';
+        alert('Спасибо, заявка отправлена! Мы свяжемся с вами.');
+        this.reset();
+    });
+</script>
+<script src="cart.js"></script>
+<!-- КНОПКА "НАВЕРХ" -->
+<button class="scroll-top-btn" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Кнопка "Наверх"
+    (function() {
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        if (!scrollBtn) return;
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('show');
+            } else {
+                scrollBtn.classList.remove('show');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Корзина | БАТТЛПАРК</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="images/photo_2026-05-28_11-14-37.jpg" alt="Логотип БаттлПарк" style="width: 50px; height: 60px;" class="logo-icon">
+            <div class="logo-text">
+                <h1><span>БАТТЛПАРК</span></h1>
+                <p>корпорация активного отдыха</p>
+                <p><a href="https://vk.com/cpvgvardiy">АНО ЦПВ "ГВАРДИЯ"</a></p>
+            </div>
+        </div>
+        <div class="nav-pages">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="#booking" class="btn-red">Запись</a>
+            <a href="cart.html" style="position:relative;text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" style="display:none;background:red;color:white;border-radius:50%;padding:2px 6px;font-size:12px;position:absolute;top:-10px;right:-15px;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- ОСНОВНОЙ КОНТЕНТ КОРЗИНЫ -->
+<section class="cart-section">
+    <div class="container">
+        <h1 class="cart-title">Моя <span>корзина</span></h1>
+        <p class="cart-subtitle">Проверьте выбранные товары и оформите заказ</p>
+        
+        <!-- Контейнер, куда будет подгружаться корзина -->
+        <div id="cart-container"></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="paintball.html">Пейнтбол</a>
+            <a href="lasertag.html">Лазертаг</a>
+            <a href="strikeball.html">Страйкбол</a>
+            <a href="kvesty.html">Квесты</a>
+            <a href="applied_sports.html">Прикладные виды спорта</a>
+            <a href="bpm.html">БПМ</a>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 30px;">
+            <p>© 2025 Корпорация активного отдыха БаттлПарк. Все права защищены.</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">Экстремальный отдых, командные игры и незабываемые эмоции</p>
+        </div>
+    </div>
+</footer>
+
+<script src="cart.js"></script>
+
+<script>
+// Функция для отображения корзины в стиле сайта
+function displayCart() {
+    let cart = getCart();
+    let container = document.getElementById('cart-container');
+    
+    if (!container) return;
+    
+    if (cart.length === 0) {
+        container.innerHTML = `
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Корзина пуста</h3>
+                <p>Добавьте товары, чтобы оформить заказ</p>
+                <a href="tariffs-beta.html" class="btn-shop"></i> Перейти к товарам</a>
+            </div>
+        `;
+        updateCartCountIcon();
+        return;
+    }
+    
+    let html = `
+        <table class="cart-table">
+            <thead>
+                <tr><th>Товар</th><th>Название</th><th>Цена</th><th>Количество</th><th>Сумма</th><th></th></tr>
+            </thead>
+            <tbody>
+    `;
+    
+    for (let item of cart) {
+        let total = item.price * item.quantity;
+        let minQuantity = getItemMinQuantity(item.id);
+        let isMinQuantity = item.quantity === minQuantity && minQuantity > 1;
+        
+        html += `
+            <tr>
+                <td data-label="Фото">
+                    ${item.image ? `<img src="${item.image}" class="cart-product-img" onerror="this.src='https://placehold.co/70x70?text=No+Image'">` : '<div class="cart-product-img" style="background:#ddd; display:flex; align-items:center; justify-content:center;"><i class="fas fa-image" style="color:#aaa;"></i></div>'}
+                </td>
+                <td data-label="Товар" class="cart-product-name">${escapeHtml(item.name)}</td>
+                <td data-label="Цена">${item.price.toLocaleString()} ₽</td>
+                <td data-label="Количество">
+                    <div class="cart-item-quantity">
+                        <button class="cart-qty-minus" data-id="${item.id}" ${isMinQuantity ? 'data-warning="true"' : ''}>-</button>
+                        <span class="cart-qty-value">${item.quantity}</span>
+                        <button class="cart-qty-plus" data-id="${item.id}">+</button>
+                        ${minQuantity > 1 ? `<div class="cart-qty-hint">мин: ${minQuantity} чел</div>` : ''}
+                    </div>
+                </td>
+                <td data-label="Сумма"><strong>${total.toLocaleString()} ₽</strong></td>
+                <td data-label="">
+                    <button class="cart-remove-btn" data-id="${item.id}" title="Удалить">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>
+            </tr>
+        `;
+    }
+    
+    let totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    
+    html += `
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <div class="summary-info">Итого: <span>${totalPrice.toLocaleString()} ₽</span></div>
+            <div class="cart-actions">
+                <button class="btn-clear" id="clearCartBtn"><i class="fas fa-trash-alt"></i> Очистить корзину</button>
+                <button class="btn-checkout" id="checkoutBtn"><i class="fas fa-credit-card"></i> Оформить заказ</button>
+            </div>
+        </div>
+        <a href="tariffs-beta.html" class="btn-back"><i class="fas fa-arrow-left"></i> Продолжить покупки</a>
+    `;
+    
+    container.innerHTML = html;
+    
+    // Назначаем обработчики
+    document.querySelectorAll('.cart-remove-btn').forEach(btn => {
+        btn.onclick = () => { removeFromCart(btn.getAttribute('data-id')); displayCart(); };
+    });
+    
+    document.querySelectorAll('.cart-qty-minus').forEach(btn => {
+        btn.onclick = () => {
+            let id = btn.getAttribute('data-id');
+            let cart = getCart();
+            let item = cart.find(i => i.id === id);
+            let minQty = getItemMinQuantity(id);
+            if (item && item.quantity > minQty) {
+                updateQuantity(id, item.quantity - 1);
+                displayCart();
+            } else if (item && item.quantity === minQty && minQty > 1) {
+                if (confirm(`Удалить "${item.name}" из корзины? Минимальное количество: ${minQty} человек.`)) {
+                    removeFromCart(id);
+                    displayCart();
+                }
+            } else {
+                removeFromCart(id);
+                displayCart();
+            }
+        };
+    });
+    
+    document.querySelectorAll('.cart-qty-plus').forEach(btn => {
+        btn.onclick = () => {
+            let id = btn.getAttribute('data-id');
+            let cart = getCart();
+            let item = cart.find(i => i.id === id);
+            if (item) {
+                updateQuantity(id, item.quantity + 1);
+                displayCart();
+            }
+        };
+    });
+    
+    document.getElementById('clearCartBtn').onclick = () => { clearCart(); displayCart(); };
+    document.getElementById('checkoutBtn').onclick = () => {
+        let cart = getCart();
+        if (cart.length === 0) { alert('Корзина пуста'); return; }
+        let msg = 'Заказ:\n' + cart.map(i => `${i.name} x${i.quantity} = ${(i.price * i.quantity)}₽`).join('\n');
+        msg += `\nИТОГО: ${cart.reduce((s,i)=>s+(i.price*i.quantity),0)}₽`;
+        if(confirm(msg + '\n\nОтправить заявку?')) {
+            window.location.href = `https://wa.me/74957992850?text=${encodeURIComponent(msg)}`;
+        }
+    };
+}
+
+function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/[&<>]/g, function(m) {
+        if (m === '&') return '&amp;';
+        if (m === '<') return '&lt;';
+        if (m === '>') return '&gt;';
+        return m;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartCountIcon();
+    displayCart();
+});
+</script>
+
+</body>
+</html>

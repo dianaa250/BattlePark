@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Фотогалерея | БАТТЛПАРК</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="images/photo_2026-05-28_11-14-37.jpg" alt="Логотип БаттлПарк" style="width: 50px; height: 60px;" class="logo-icon">
+            <div class="logo-text">
+                <h1><span>БАТТЛПАРК</span></h1>
+                <p>корпорация активного отдыха</p>
+                <p><a href="https://vk.com/cpvgvardiy">АНО ЦПВ "ГВАРДИЯ"</a></p>
+            </div>
+        </div>
+        <div class="nav-pages">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="#booking" class="btn-red">Запись</a>
+            <a href="cart.html" style="position:relative;text-decoration:none;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" style="display:none;background:red;color:white;border-radius:50%;padding:2px 6px;font-size:12px;position:absolute;top:-10px;right:-15px;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- ЗАГОЛОВОК -->
+<section class="page-title">
+    <div class="container">
+        <h1>Фото<span>галерея</span></h1>
+        <p>Яркие моменты наших игр, тренировок и мероприятий</p>
+        <p>А так же профессиональные инструктора</p>
+    </div>
+</section>
+
+<!-- ФИЛЬТРЫ -->
+<section class="filter-section">
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="paintball">Пейнтбол</button>
+            <button class="filter-btn" data-filter="lasertag">Лазертаг</button>
+            <button class="filter-btn" data-filter="obstacle-course">Полоса препятствий</button>
+            <button class="filter-btn" data-filter="team">Команда</button>
+            <button class="filter-btn active" data-filter="all">Все фото</button>
+        </div>
+    </div>
+</section>
+
+<!-- СЕТКА ГАЛЕРЕИ -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Фото будут добавлены через JavaScript, но для наглядности дублируем и в HTML -->
+        </div>
+    </div>
+</section>
+
+<!-- LIGHTBOX (модальное окно) -->
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightboxImg" src="" alt="">
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+</div>
+
+<!-- ПОДВАЛ -->
+<footer>
+    <div class="container">
+        <div class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="tariffs-beta.html">Тарифы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="gallery.html">Фотогалерея</a>
+            <a href="paintball.html">Пейнтбол</a>
+            <a href="lasertag.html">Лазертаг</a>
+            <a href="strikeball.html">Страйкбол</a>
+            <a href="kvesty.html">Квесты</a>
+            <a href="applied_sports.html">Прикладные виды спорта</a>
+            <a href="bpm.html">БПМ</a>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 30px;">
+            <p>© 2025 Корпорация активного отдыха БаттлПарк.  Все права защищены.</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">Экстремальный отдых, командные игры и незабываемые эмоции</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ДАННЫЕ ДЛЯ ГАЛЕРЕИ (замените пути на свои фотографии)
+    const galleryData = [
+        { src: "images/gallery/paintball-1.jpg", title: "Атака на позиции", category: "paintball", desc: "Жаркий бой в лесном массиве" },
+        { src: "images/gallery/paintball-2.jpg", title: "Тактическое совещание", category: "paintball", desc: "Команда разрабатывает план" },
+        { src: "images/gallery/paintball-3.jpg", title: "Прямое попадание", category: "paintball", desc: "Эпичный момент игры" },
+        { src: "images/gallery/lasertag-1.jpg", title: "Ночной лазертаг", category: "lasertag", desc: "Игра в темноте со световыми эффектами" },
+        { src: "images/gallery/lasertag-2.jpg", title: "Детский лазертаг", category: "lasertag", desc: "Юные бойцы в действии" },
+        { src: "images/gallery/lasertag-3.jpg", title: "Командная игра", category: "lasertag", desc: "Слаженная работа отряда" },
+        { src: "images/gallery/team-1.jpg", title: "Наши инструкторы", category: "team", desc: "Профессионалы своего дела" },
+        { src: "images/gallery/team-2.jpg", title: "Команда Гвардия", category: "team", desc: "Весь коллектив клуба" },
+        { src: "images/gallery/events-1.jpg", title: "Корпоративный турнир", category: "events", desc: "Битва компаний" },
+        { src: "images/gallery/events-2.jpg", title: "День рождения", category: "events", desc: "Праздник с пейнтболом" },
+        { src: "images/gallery/events-3.jpg", title: "Массовое сражение", category: "events", desc: "Более 50 участников" },
+        { src: "images/gallery/paintball-4.jpg", title: "Финал игры", category: "paintball", desc: "Победный выстрел" },
+        { src: "images/IMG_8121.PNG", title: "", category: "obstacle-course", desc: "Праздник с пейнтболом" },
+        { src: "images/IMG_8116 2.PNG", title: "Массовое сражение", category: "obstacle-course", desc: "Более 50 участников" },
+        { src: "images/IMG_8120.PNG", title: "Финал игры", category: "obstacle-course", desc: "Победный выстрел" }
+    ];
+
+    // Функция рендеринга галереи с фильтром
+    function renderGallery(filter = "all") {
+        const grid = document.getElementById("galleryGrid");
+        if (!grid) return;
+        
+        const filtered = filter === "all" 
+            ? galleryData 
+            : galleryData.filter(item => item.category === filter);
+        
+        if (filtered.length === 0) {
+            grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:60px; color:#999;">Фотографий в этой категории пока нет</div>`;
+            return;
+        }
+        
+        grid.innerHTML = filtered.map((item, index) => `
+            <div class="gallery-item" data-category="${item.category}" data-index="${index}">
+                <img src="${item.src}" alt="${item.title}" loading="lazy" onerror="this.src='https://placehold.co/600x400?text=Фото+не+загружено'">
+                <div class="gallery-overlay">
+                    <h4>${item.title}</h4>
+                    <p>${item.desc}</p>
+                </div>
+            </div>
+        `).join("");
+        
+        // Добавляем обработчики клика для открытия lightbox
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const idx = item.getAttribute('data-index');
+                // Находим оригинальный индекс в отфильтрованном массиве
+                const realData = filter === "all" ? galleryData : galleryData.filter(i => i.category === filter);
+                const dataItem = realData[parseInt(idx)];
+                if (dataItem) {
+                    openLightbox(dataItem.src, dataItem.title + " — " + dataItem.desc);
+                } else {
+                    // fallback
+                    const imgSrc = item.querySelector('img').src;
+                    openLightbox(imgSrc, item.querySelector('.gallery-overlay h4')?.innerText || "");
+                }
+            });
+        });
+    }
+
+    // Lightbox функции
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    
+    function openLightbox(src, caption) {
+        lightboxImg.src = src;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+    
+    function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+    
+    // Обработчики для lightbox
+    document.querySelector(".close-lightbox").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lightbox.classList.contains("active")) {
+            closeLightbox();
+        }
+    });
+    
+    // Фильтрация
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            filterBtns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            const filterValue = btn.getAttribute("data-filter");
+            renderGallery(filterValue);
+        });
+    });
+    
+    // Инициализация
+    renderGallery("all");
+    
+    // Подстановка реальных изображений, если они не загрузились (заглушки)
+    console.log("Фотогалерея загружена. Добавьте свои фото в папку images/gallery/");
+</script>
+<!-- Подключаем наш файл с корзиной -->
+<script src="cart.js"></script>
+<!-- КНОПКА "НАВЕРХ" -->
+<button class="scroll-top-btn" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Кнопка "Наверх"
+    (function() {
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        if (!scrollBtn) return;
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('show');
+            } else {
+                scrollBtn.classList.remove('show');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    })();
+</script>
+</body>
+</html>
